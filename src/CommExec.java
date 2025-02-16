@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.Arrays;
+import coll.*;
 
 public class CommExec {
 private Commands collhandler;
