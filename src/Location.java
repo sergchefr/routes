@@ -10,6 +10,7 @@ public class Location {
         this.y = y;
         this.z = z;
         this.name = name;
+        //System.out.println("location created");
     }
 
     @Override
@@ -20,5 +21,21 @@ public class Location {
                 ", z=" + z +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public Integer getX() {
+        return x;
+    }
+
+    public Integer getY() {
+        return y;
+    }
+
+    public Float getZ() {
+        return z;
+    }
+
+    public String getName() {
+        return name;
     }
 }

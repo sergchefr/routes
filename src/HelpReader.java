@@ -8,8 +8,8 @@ public class HelpReader {
     ArrayList<String> commands = new ArrayList<>();
 
     public HelpReader() throws IOException {
-        String filepath  ="src/help.txt";
 
+        String filepath = System.getProperty("java.class.path")+"\\data\\"+"help.txt";
         try(BufferedReader bfr = new BufferedReader(new InputStreamReader(new FileInputStream(filepath)))){
             String nl;
             while(true){

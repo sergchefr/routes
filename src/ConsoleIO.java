@@ -52,9 +52,6 @@ public class ConsoleIO {
                 case("clear"):
                     System.out.println(commExec.execute("clear"));
                     break;
-                case("save"):
-                    System.out.println(commExec.execute("save"));
-                    break;
                 case("execute_script"):
                     if(splitted.length==2){
                         System.out.println(commExec.execute("execute_script "+splitted[1].strip()));
@@ -84,6 +81,12 @@ public class ConsoleIO {
                     break;
                 case("print_field_ascending_distance"):
                     System.out.println(commExec.execute("print_field_ascending_distance"));
+                    break;
+                case("load"):
+                    System.out.println(commExec.execute("load "+ splitted[1]));
+                    break;
+                case("save"):
+                    System.out.println(commExec.execute("save "+ splitted[1]));
                     break;
                 default:
                     System.out.println("unidentified command");

@@ -5,6 +5,7 @@ public class CommExec {
 private Commands collhandler;
 boolean helpFileExists = true;
 HelpReader hrd;
+History hst = new History();
 
 public CommExec(Commands collhandler){
     this.collhandler = collhandler;
@@ -17,6 +18,7 @@ public CommExec(Commands collhandler){
 }
     public String execute(String par){
         String[] parm = par.strip().split(" ");
+        hst.add(parm[0]);
         switch (parm[0]){
 
             case ("help"):{
@@ -39,14 +41,22 @@ public CommExec(Commands collhandler){
             }
 
             case ("add"):{
-                Route route = RouteParse(Arrays.copyOfRange(parm, 1,11));
-                return collhandler.add(route);
+                try{
+                    Route route = RouteParse(Arrays.copyOfRange(parm, 1,11));
+                    return collhandler.add(route);
+                }catch (IOException e){
+                    return e.getMessage();
+                }
             }
 
             case ("update"):{
                 int id = Integer.parseInt(parm[1]);
-                Route route = RouteParse(Arrays.copyOfRange(parm, 2,12));
-                return collhandler.update(id, route);
+                try {
+                    Route route = RouteParse(Arrays.copyOfRange(parm, 2, 12));
+                    return collhandler.update(id, route);
+                }catch (IOException e){
+                    return e.getMessage();
+                }
             }
 
             case ("remove_by_id"):{
@@ -58,8 +68,8 @@ public CommExec(Commands collhandler){
                 return collhandler.clear();
             }
 
-            case ("save"):{
-                return collhandler.save();
+            case ("history"):{
+                return hst.showHistory();
             }
 
             case ("execute_script"):{
@@ -72,17 +82,23 @@ public CommExec(Commands collhandler){
             }
 
             case ("add_if_max"):{
-                Route route = RouteParse(Arrays.copyOfRange(parm, 1,11));
-                return collhandler.addIfMax(route);
+                try {
+                    Route route = RouteParse(Arrays.copyOfRange(parm, 1,11));
+                    return collhandler.addIfMax(route);
+                }catch (IOException e){
+                    return e.getMessage();
+                }
+
+
             }
 
             case ("add_if_min"):{
-                Route route = RouteParse(Arrays.copyOfRange(parm, 1,11));
-                return collhandler.addIfMin(route);
-            }
-
-            case ("history"):{
-                return collhandler.history();
+                try{
+                    Route route = RouteParse(Arrays.copyOfRange(parm, 1,11));
+                    return collhandler.addIfMin(route);
+                }catch (IOException e){
+                    return e.getMessage();
+                }
             }
 
             case ("average_of_distance"):{
@@ -97,13 +113,22 @@ public CommExec(Commands collhandler){
                 return collhandler.printAscDist();
             }
 
+            case ("save"):{
+                return collhandler.save(parm[1]);
+            }
+
+            case ("load"):{
+                return collhandler.load(parm[1]);
+            }
+
+
             default:
                 //throw new ParseException("unidentified command", 0);
                 return "unknown error";
         }
     }
 
-    private Route RouteParse(String[] parm){    //public Route(String name,Location from, Location to, Float distance)
+    private Route RouteParse(String[] parm)throws IOException{    //public Route(String name,Location from, Location to, Float distance)
                                                 // public Location(Integer x, Integer y, Float z, String name)
         int fromx = Integer.parseInt(parm[0]);
         int fromy = Integer.parseInt(parm[1]);
@@ -118,8 +143,10 @@ public CommExec(Commands collhandler){
         float dist = Float.parseFloat(parm[8]);
 
         String name = parm[9];
-
-        return new Route(name, from, to, dist);
-
+        try {
+            return new Route(name, from, to, dist);
+        }catch (IOException e){
+            throw new IOException(e);
+        }
     }
 }
