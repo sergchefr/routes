@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+	<route>
+		<id>3</id>
+		<name>toDach</name>
+		<creationDate>Sat Feb 15 22:48:03 MSK 2025</creationDate>
+		<locationFrom>
+			<name>home</name>
+			<x>1</x>
+			<y>4</y>
+			<z>7.0</z>
+		</locationFrom>
+		<locationTo>
+			<name>dacha</name>
+			<x>1</x>
+			<y>4</y>
+			<z>7.0</z>
+		</locationTo>
+		<distance>70.0</distance>
+	</route>
+</data>

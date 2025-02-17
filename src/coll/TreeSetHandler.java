@@ -12,7 +12,13 @@ public class TreeSetHandler implements Commands {
         this.initDate = new Date();
     }
 
-    public String add(Route route){
+    public String add(Object obj){
+        Route route;
+        try{
+            route = (Route) obj;
+        }catch(ClassCastException e){
+            return "collection handles only routes";
+        }
         if(coll.add(route)) return "element was added";
         return "element is already in collection";
     }
@@ -28,7 +34,13 @@ public class TreeSetHandler implements Commands {
         }
         return s;
     }
-    public String update(int id, Route route){
+    public String update(int id, Object obj){
+        Route route;
+        try{
+            route = (Route) obj;
+        }catch(ClassCastException e){
+            return "collection handles only routes";
+        }
         for (Object o : coll) {
             if(((Route)o).getId()==id) {
                 coll.remove(o);
@@ -66,7 +78,14 @@ public class TreeSetHandler implements Commands {
         System.exit(0);
         return "";
     }
-    public String addIfMax(Route route){
+    public String addIfMax(Object obj){
+        Route route;
+        try{
+            route = (Route) obj;
+        }catch(ClassCastException e){
+            return "collection handles only routes";
+        }
+
         float maxd=0;
         for (Object o : coll) {
             if(((Route)o).getDistance()>maxd) maxd=((Route)o).getDistance();
@@ -77,7 +96,14 @@ public class TreeSetHandler implements Commands {
         }
         return "element is not max";
     }
-    public String addIfMin(Route route){
+    public String addIfMin(Object obj){
+        Route route;
+        try{
+            route = (Route) obj;
+        }catch(ClassCastException e){
+            return "collection handles only routes";
+        }
+
         float mind=Float.POSITIVE_INFINITY;
         for (Object o : coll) {
             if(((Route)o).getDistance()<mind) mind=((Route)o).getDistance();

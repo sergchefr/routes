@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a1a77eb-f3bf-42e9-b7d9-4cd52302e973" name="Changes" comment="almost full functionality">
+      <change afterPath="$PROJECT_DIR$/src/client/ClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/ServerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coll/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coll/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coll/TreeSetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coll/TreeSetHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coms/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coms/AddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coms/Icommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coms/Icommand.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sergchefr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sergchefr/routes&quot;,
+    &quot;accountId&quot;: &quot;dca9bb9c-8723-4241-8072-25cf83aeb18c&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2sz8ZFUpVGZOdQmEWyXNCWmFPGB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a1a77eb-f3bf-42e9-b7d9-4cd52302e973" name="Changes" comment="" />
+      <created>1739447097695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739447097695</updated>
+    </task>
+    <task id="LOCAL-00001" summary="almost full functionality">
+      <option name="closed" value="true" />
+      <created>1739732123620</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739732123620</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="almost full functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost full functionality" />
+  </component>
+</project>

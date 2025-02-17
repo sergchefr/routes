@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<data>
+	<route>
+		<id>1</id>
+		<name>towork</name>
+		<creationDate>Sat Feb 15 18:21:01 MSK 2025</creationDate>
+		<locationFrom>
+			<name>home</name>
+			<x>10</x>
+			<y>2</y>
+			<z>4.2</z>
+		</locationFrom>
+		<locationTo>
+			<name>work</name>
+			<x>3</x>
+			<y>8</y>
+			<z>3.6</z>
+		</locationTo>
+		<distance>35.2</distance>
+	</route>
+	<route>
+		<id>2</id>
+		<name>touni</name>
+		<creationDate>Sat Feb 15 18:21:01 MSK 2025</creationDate>
+		<locationFrom>
+			<name>home</name>
+			<x>10</x>
+			<y>2</y>
+			<z>4.2</z>
+		</locationFrom>
+		<locationTo>
+			<name>uni</name>
+			<x>2</x>
+			<y>5</y>
+			<z>7.3</z>
+		</locationTo>
+		<distance>17.8</distance>
+	</route>
+</data>
