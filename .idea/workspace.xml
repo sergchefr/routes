@@ -4,14 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a1a77eb-f3bf-42e9-b7d9-4cd52302e973" name="Changes" comment="almost full functionality">
+    <list default="true" id="7a1a77eb-f3bf-42e9-b7d9-4cd52302e973" name="Changes" comment="fucking reflect">
+      <change afterPath="$PROJECT_DIR$/src/CommandName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/AVGdistanceCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/AbstractCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/AddIfMaxCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/AddIfMinCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/ClearCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/ExecuteScriptCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/ExitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/HistoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/Infocommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/LoadCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/PrintAscCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/PrintFieldAscDistCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/RemoveByIdCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/SaveCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/ShowCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coms/UpdateCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/routes/CommExec.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/routes/CommExec.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/routes/HelpReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/routes/History.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/routes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/routes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/routes/coll/Commands.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/routes/coll/Commands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/routes/coll/TreeSetHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/routes/coll/TreeSetHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/routes/coms/AddCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/routes/coms/AddCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/routes/coms/Icommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/routes/coms/Icommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CommExec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CommExec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HelpReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/HelpReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/History.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/ClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coll/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coll/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coll/TreeSetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coll/TreeSetHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/coms/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coms/AddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coms/Icommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coms/Icommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/coms/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/coms/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/help.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/ServerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ServerManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +52,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -35,12 +66,12 @@
     &quot;assignee&quot;: &quot;sergchefr&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sergchefr/routes&quot;,
-    &quot;accountId&quot;: &quot;dca9bb9c-8723-4241-8072-25cf83aeb18c&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sergchefr/routes",
+    "accountId": "e8130771-e36a-4441-b6f4-a9bee59c0630"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -82,11 +113,31 @@
       <option name="project" value="LOCAL" />
       <updated>1739732123620</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fucking reflect">
+      <option name="closed" value="true" />
+      <created>1739824311764</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739824311764</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="almost full functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost full functionality" />
+    <MESSAGE value="fucking reflect" />
+    <option name="LAST_COMMIT_MESSAGE" value="fucking reflect" />
   </component>
 </project>

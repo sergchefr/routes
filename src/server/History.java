@@ -1,3 +1,5 @@
+package server;
+
 import java.util.ArrayDeque;
 
 public class History {

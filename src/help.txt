@@ -1,6 +1,6 @@
 add: adds a new route to the collection
 help: shows help paper. help command with a command after shows help paper only obout that command
-info: shows the collection`s elements
+show: shows the collection`s elements
 info: shows the info about the collection
 update: update id adds an element with the id instead of the element with the same id in the collection
 remove_by_id: remove_by_id id removes an element with that id from the collection
@@ -8,8 +8,8 @@ clear: deletes all elements from the collection
 save: saves the collection into the XML file
 execute_script: execute_script filename executes script with filename
 exit: use it to exit the program
-add_if_max: adds a route to the collection if it`s distance is the largest on the collection
-add_if_min: adds a route to the collection if it`s distance is the smallest on the collection
+add_if_max: adds a route to the collection if it`s distance is the largest in the collection
+add_if_min: adds a route to the collection if it`s distance is the smallest in the collection
 history: shows the last 12 commands
 average_of_distance: shows the average distance of the routes in the collection
 print_ascending: shows elements of the collection, sorted by their distance

@@ -1,6 +1,8 @@
 package coms;
 
 public interface Icommand {
-    public void execute();
+    public String execute();
     public String description();
+
+
 }

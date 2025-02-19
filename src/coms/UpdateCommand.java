@@ -1,22 +1,22 @@
 package coms;
-import coll.Commands;
 
 import coll.Location;
 import coll.Route;
-import coll.TreeSetHandler;
 import server.ServerManager;
 
 import java.io.IOException;
 import java.util.Arrays;
 
-public class AddCommand extends AbstractCommand {
+public class UpdateCommand extends AbstractCommand{
 
-private final Route route;
+    private final Route route;
+    private final long id;
 
-    public AddCommand(ServerManager target, String[] param) throws IOException {
-        super(target, param);
+    public UpdateCommand(ServerManager target, String[] param) throws IOException {
+        super(target,param);
+        this.id = Long.parseLong(param[0]);
         try {
-            this.route = routeParse(param);
+            this.route = routeParse(Arrays.copyOfRange(param, 1, 11));
         } catch (IOException e) {
             throw new IOException(e);
         }
@@ -25,11 +25,11 @@ private final Route route;
     //public AddCommand(String a) {}
 
     public String execute(){
-        return getTarget().add(route);
+        return getTarget().update(id,route);
     }
 
     public String description(){
-        return "adds a new route to the collection";
+        return "update id adds an element with the id instead of the element with the same id in the collection";
     }
 
     private Route routeParse(String[] parm)throws IOException{

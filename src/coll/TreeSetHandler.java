@@ -12,7 +12,7 @@ public class TreeSetHandler implements Commands {
         this.initDate = new Date();
     }
 
-    public String add(Object obj){
+    public String add(Route obj){
         Route route;
         try{
             route = (Route) obj;
@@ -34,7 +34,7 @@ public class TreeSetHandler implements Commands {
         }
         return s;
     }
-    public String update(int id, Object obj){
+    public String update(Long id, Route obj){
         Route route;
         try{
             route = (Route) obj;
@@ -42,7 +42,7 @@ public class TreeSetHandler implements Commands {
             return "collection handles only routes";
         }
         for (Object o : coll) {
-            if(((Route)o).getId()==id) {
+            if(((Route)o).getId().equals(id)) {
                 coll.remove(o);
                 try{
                     if(coll.add(new Route((long)id, route.getName(),route.getCreationDate(), route.getFromLocation(),route.getToLocation(), route.getDistance()))){
@@ -58,7 +58,7 @@ public class TreeSetHandler implements Commands {
         }
         return "element with this id doesn`t exist";
     }
-    public String removeById(int id){
+    public String removeById(long id){
         for (Object o : coll) {
             if(((Route)o).getId()==id) {
                 coll.remove(o);
@@ -78,7 +78,7 @@ public class TreeSetHandler implements Commands {
         System.exit(0);
         return "";
     }
-    public String addIfMax(Object obj){
+    public String addIfMax(Route obj){
         Route route;
         try{
             route = (Route) obj;
@@ -96,7 +96,7 @@ public class TreeSetHandler implements Commands {
         }
         return "element is not max";
     }
-    public String addIfMin(Object obj){
+    public String addIfMin(Route obj){
         Route route;
         try{
             route = (Route) obj;
@@ -161,5 +161,10 @@ public class TreeSetHandler implements Commands {
             return "error while opening file: "+e;
         }
         return "file loaded";
+    }
+
+    @Override
+    public String showHistory() {
+        return "";
     }
 }

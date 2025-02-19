@@ -1,6 +1,8 @@
 import java.io.IOException;
 import java.util.Arrays;
 import coll.*;
+import server.HelpReader;
+import server.History;
 
 public class CommExec {
 private Commands collhandler;
@@ -18,6 +20,7 @@ public CommExec(Commands collhandler){
 
 }
     public String execute(String par){
+        //System.out.println(par);
         String[] parm = par.strip().split(" ");
         hst.add(parm[0]);
         switch (parm[0]){
@@ -51,7 +54,7 @@ public CommExec(Commands collhandler){
             }
 
             case ("update"):{
-                int id = Integer.parseInt(parm[1]);
+                Long id = Long.parseLong(parm[1]);
                 try {
                     Route route = RouteParse(Arrays.copyOfRange(parm, 2, 12));
                     return collhandler.update(id, route);

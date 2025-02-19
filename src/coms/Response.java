@@ -1,7 +1,7 @@
 package coms;
 /** Объект, содержащий ответ от серверной части*/
 public class Response {
-    private String resp;
+    private final String resp;
 
     public Response(String responce) {
         this.resp = responce;

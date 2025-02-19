@@ -1,19 +1,15 @@
 package coms;
-import coll.Commands;
 
 import coll.Location;
 import coll.Route;
-import coll.TreeSetHandler;
 import server.ServerManager;
 
 import java.io.IOException;
-import java.util.Arrays;
 
-public class AddCommand extends AbstractCommand {
+public class AddIfMinCommand extends AbstractCommand{
+    private final Route route;
 
-private final Route route;
-
-    public AddCommand(ServerManager target, String[] param) throws IOException {
+    public AddIfMinCommand(ServerManager target, String[] param) throws IOException {
         super(target, param);
         try {
             this.route = routeParse(param);
@@ -22,14 +18,12 @@ private final Route route;
         }
     }
 
-    //public AddCommand(String a) {}
-
     public String execute(){
-        return getTarget().add(route);
+        return getTarget().addIfMin(route);
     }
 
     public String description(){
-        return "adds a new route to the collection";
+        return "adds a route to the collection if it`s distance is the smallest in the collection";
     }
 
     private Route routeParse(String[] parm)throws IOException{
